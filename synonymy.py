@@ -2,7 +2,7 @@
 """
 Created on Tue Oct 21 17:35:53 2025
 
-@author: madeleine.dufrasne
+@author: madeleine.valat
 """
 
 from vembed.vembed import calculate_similarities
