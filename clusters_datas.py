@@ -30,7 +30,7 @@ hierarchy=make_dendrogram(intermodel_distances)
  * @param {string} identifier - the number associated with the included models
 """
 def visualize_clusters_in_table(clusters,synonyms,identifier):
-    with open(f"Comparaison structurelle/Results/Clusters_informations/clusters{identifier}.csv","w") as f:
+    with open(f"StructuralComparison/Results/Clusters_informations/clusters{identifier}.csv","w") as f:
         for i in range(len(clusters)):
             c=extract_models_and_terms(clusters[i])[1]
             c.append(synonyms[i])
@@ -174,5 +174,5 @@ for identifier,clusters in dict_id_clusters.items():
             m,t=model_and_term_from(term)
             m=m[:-1]
             df_clusters_models.loc[m,syn]+=1
-    df_clusters_models.to_csv(f"Comparaison structurelle/Results/Clusters_informations/clusters_by_models{identifier}.csv", index=True)
+    df_clusters_models.to_csv(f"StructuralComparison/Results/Clusters_informations/clusters_by_models{identifier}.csv", index=True)
         
