@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/XMI">
+  <uml:Model xmi:id="model_1" name="ConvertedModel">
+
+	<!-- Class -->
+	<packagedElement xmi:type="uml:Class" xmi:id="IDCLASS" name="NAMECLASS"/>
+	
+	<packagedElement xmi:type="uml:Class" xmi:id="IDCLASS" name="NAMECLASS">
+	</packagedElement>
+	
+	<!-- Abstract class -->
+	<packagedElement xmi:type="uml:Class" xmi:id="IDCLASS" name="NAMECLASS" abstract="True"/>
+	
+	<!-- Interface -->
+	<packagedElement xmi:type="uml:Interface" xmi:id="IDINTERFACE" name="INTERFACE"/>
+	
+	<!-- Enumerated -->
+	<packagedElement xmi:type="uml:Enumeration" xmi:id="enum_CLASS" name="CLASS">
+		<ownedLiteral xmi:id="enum_ENUM" name="ENUM"/>
+	</packagedElement>
+	
+	<!-- Class attribute -->
+		<ownedAttribute xmi:id="IDATTRIBUT" name="ATTRIBUT" type="TYPE"/>
+	
+	<!-- Class method -->
+		<ownedOperation xmi:id="IDMETHODE" name="NAMEMETHODE">
+			<ownedParameter xmi:id="IDPARAMETREENTREE" name="PARAMETREENTREE" direction="in" type="TYPE"/>
+			<ownedParameter xmi:id="IDPARAMETRESORTIE" name="PARAMETRESORTIE" direction="return" type="TYPE"/>
+		</ownedOperation>
+	
+	<!-- Association (with multiplicity) -->
+	<packagedElement xmi:type="uml:Association" xmi:id="assoc_CLASSA_CLASSB">
+		<ownedEnd xmi:id="end_CLASSA_assoc_CLASSA_CLASSB" type="IDCLASSA">
+			<lowerValue xmi:type="uml:LiteralInteger" value="VALUE"/>
+			<upperValue xmi:type="uml:LiteralInteger" value="VALUE"/>
+		</ownedEnd>
+		<ownedEnd xmi:id="end_CLASSB_assoc_CLASSA_CLASSB" type="IDCLASSB">
+			<lowerValue xmi:type="uml:LiteralInteger" value="VALUE"/>
+			<upperValue xmi:type="uml:LiteralInteger" value="VALUE"/>
+		</ownedEnd>
+	</packagedElement>
+	
+	<!-- Association and navigability -->
+	<packagedElement xmi:type="uml:Association" xmi:id="assoc_CLASSDEBUTFLECHE_CLASSB">
+		<ownedEnd xmi:id="end_CLASSDEBUTFLECHE_assoc_CLASSDEBUTFLECHE_CLASSB" type="IDCLASSDEBUTFLECHE" isNavigable="false"/>
+		<ownedEnd xmi:id="end_CLASSB_assoc_CLASSDEBUTFLECHE_CLASSB" type="IDCLASSB" isNavigable="True"/>
+	</packagedElement>
+	
+	<!-- Aggregation -->
+	<packagedElement xmi:type="uml:Association" xmi:id="aggregation_CLASSLOSANGE_CLASSB">
+		<ownedEnd xmi:id="end_CLASSLOSANGE_aggregation_CLASSLOSANGE_CLASSB" type="IDCLASSLOSANGE"/>
+		<ownedEnd xmi:id="end_CLASSB_aggregation_CLASSLOSANGE_CLASSB" type="IDCLASSB" aggregation="shared"/>
+	</packagedElement>
+
+	<!-- Composition -->
+	<packagedElement xmi:type="uml:Association" xmi:id="composition_CLASSB_CLASSLOSANGE">
+		<ownedEnd xmi:id="end_CLASSLOSANGE_composition_CLASSLOSANGE_CLASSB" type="IDCLASSLOSANGE"/>
+		<ownedEnd xmi:id="end_CLASSB_composition_CLASSLOSANGE_CLASSB" type="IDCLASSB" aggregation="composite"/>
+	</packagedElement>
+	
+	<!-- Heritage -->
+	<!-- In the declaration of child class : -->
+		<generalization xmi:id="heritage_CLASSA_CLASSPARENT" general="IDCLASSPARENT"/>
+	
+	<!-- Association class -->
+	<packagedElement xmi:type="uml:AssociationClass" xmi:id="IDCLASS" name="NAMECLASS">
+		<ownedEnd xmi:id="end_CLASSA_assoc_CLASSA_CLASSB" type="IDCLASSA"/>
+		<ownedEnd xmi:id="end_CLASSB_assoc_CLASSA_CLASSB" type="IDCLASSB"/>
+	</packagedElement>
+	
+	<!-- Dependency -->
+	<packagedElement xmi:type="uml:Dependency" xmi:id="dependance_CLASSDEPENDANTE_CLASSB" client="IDCLASSDEPENDANTE" supplier="IDCLASSB">
+		<appliedStereotype xmi:type="uml:Stereotype" name="STEREOTYPE"/>
+	</packagedElement>
+	
+	<!-- Realization -->
+	<packagedElement xmi:type="uml:Realization" xmi:id="realisation_CLASSREALISANTE_CLASSB" client="IDCLASSREALISANTE" supplier="IDCLASSB"/>
+	
+	<!-- Typage -->
+	<packagedElement xmi:type="uml:DataType" xmi:id="TYPE" name="TYPE"/>
