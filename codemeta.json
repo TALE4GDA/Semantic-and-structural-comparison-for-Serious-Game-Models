@@ -1,0 +1,74 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "Technology Enhanced Learning",
+    "author": [
+        {
+            "id": "https://cv.hal.science/madeleine-valat",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "IMT Nord Europe"
+            },
+            "email": "madeleine.dufrasne@imt-nord-europe.fr",
+            "familyName": "Valat",
+            "givenName": "Madeleine"
+        },
+        {
+            "id": "https://cv.hal.science/alexislebis",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "IMT Nord Europe"
+            },
+            "email": "alexis.lebis@imt-nord-europe.fr",
+            "familyName": "Lebis",
+            "givenName": "Alexis"
+        },
+        {
+            "id": "https://cv.hal.science/anthony-fleury",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "IMT Nord Europe"
+            },
+            "email": "anthony.fleury@imt-nord-europe.fr",
+            "familyName": "Fleury",
+            "givenName": "Anthony"
+        }
+    ],
+    "codeRepository": "https://github.com/TALE4GDA/Semantic-and-structural-comparison-for-Serious-Game-Models",
+    "dateModified": "2026-08-24",
+    "datePublished": "2026-08-24",
+    "description": "A code to produce a consensus representation of several serious game models prior converted into UML.",
+    "downloadUrl": "https://github.com/TALE4GDA/Semantic-and-structural-comparison-for-Serious-Game-Models",
+    "funder": {
+        "type": "Organization",
+        "name": "Agence Nationale de la Recherche"
+    },
+    "keywords": [
+        "serious game models",
+        "model alignement",
+        "model comparison",
+        "consensus representation",
+        "clustering"
+    ],
+    "license": "https://spdx.org/licenses/CC-BY-4.0",
+    "name": "Semantic and structural comparison for Serious Game Models",
+    "programmingLanguage": "Python 3",
+    "softwareRequirements": [
+        "https://www.nltk.org/api/nltk.corpus.html",
+        "https://beautiful-soup-4.readthedocs.io/en/latest/",
+        "https://numpy.org/",
+        "https://pandas.pydata.org/",
+        "https://scikit-learn.org/stable/api/sklearn.metrics.html",
+        "https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html",
+        "https://docs.scipy.org/doc/scipy/reference/spatial.distance.html",
+        "https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html",
+        "https://github.com/kuro337/vembed",
+        "https://github.com/jgraph/drawio-desktop/releases/tag/v31.3.1"
+    ],
+    "version": "1.0.0",
+    "developmentStatus": "concept",
+    "funding": "ANR-23-CE38-0001"
+}
